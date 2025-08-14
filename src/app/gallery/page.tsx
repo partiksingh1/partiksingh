@@ -6,12 +6,19 @@ import { useRouter } from "next/navigation";
 
 export default function Page() {
     const router = useRouter();
+    const handleGoBack = () => {
+        if (window.history.length > 3) {
+            router.back()
+        } else {
+            router.push('/')
+        }
+    }
     return (
         <section id="gallery" className="py-20 bg-muted/30">
             <div className="container mx-auto px-6">
                 <Button
                     variant="ghost"
-                    onClick={() => router.push('/')}
+                    onClick={handleGoBack}
                     className="mb-8 hover:bg-muted"
                 >
                     <ArrowLeft className="w-4 h-4 mr-2" />

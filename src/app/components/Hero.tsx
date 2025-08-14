@@ -1,5 +1,12 @@
+"use client"
 import { Button } from '@/components/ui/button'
 import { Github, Linkedin, Mail } from 'lucide-react'
+const scrollToProjects = () => {
+  const projectsSection = document.getElementById('projects');
+  if (projectsSection) {
+    projectsSection.scrollIntoView({ behavior: 'smooth' });
+  }
+};
 export function Hero() {
   return (
     <section id="home" className="pt-24 pb-16">
@@ -35,10 +42,10 @@ export function Hero() {
           </Button>
         </div>
 
-        <Button size="lg" asChild>
-          <a href="#projects" className='scroll-auto'>View My Work</a>
+        <Button size="lg" asChild onClick={scrollToProjects}>
+          <span className='bg-scroll'>View My Work</span>
         </Button>
       </div>
-    </section>
+    </section >
   )
 }

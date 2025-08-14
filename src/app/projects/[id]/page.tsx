@@ -8,15 +8,26 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import Image from 'next/image'
 import React from 'react'
 import { useRouter } from 'next/navigation'
+import { notFound } from 'next/navigation'
 
 export default function Page({ params }: { params: Promise<{ id: string }> }) {
     const router = useRouter();
     const { id } = React.use(params); // Unwrap the params Promise
     if (!id) {
-        return <div>Loading...</div>;
+        notFound()
     }
 
+    const handleGoBack = () => {
+        if (window.history.length > 3) {
+            router.back()
+        } else {
+            router.push('/')
+        }
+    }
     const project = getProject(id);
+    if (!project) {
+        notFound()
+    }
     if (!project) {
         return (
             <div className="min-h-screen pt-24 pb-12">
@@ -26,9 +37,7 @@ export default function Page({ params }: { params: Promise<{ id: string }> }) {
                         <p className="text-muted-foreground mb-8">
                             The project you are looking for doesnt exist.
                         </p>
-                        <Button onClick={() => {
-
-                        }}>
+                        <Button onClick={handleGoBack}>
                             <ArrowLeft className="w-4 h-4 mr-2" />
                             Go Back
                         </Button>
@@ -45,7 +54,7 @@ export default function Page({ params }: { params: Promise<{ id: string }> }) {
                     {/* Back Button */}
                     <Button
                         variant="ghost"
-                        onClick={() => router.push('/')}
+                        onClick={handleGoBack}
                         className="mb-8 hover:bg-muted"
                     >
                         <ArrowLeft className="w-4 h-4 mr-2" />
