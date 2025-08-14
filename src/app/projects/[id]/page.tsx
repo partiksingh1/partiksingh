@@ -1,6 +1,6 @@
 "use client"
 import { ArrowLeft, ExternalLink, Github, CheckCircle } from 'lucide-react'
-import type { ReactElement, JSXElementConstructor, ReactNode, ReactPortal, Key } from 'react'
+import type { ReactElement, ReactNode, ReactPortal, Key } from 'react'
 import { getProject } from '@/data/mockData'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
