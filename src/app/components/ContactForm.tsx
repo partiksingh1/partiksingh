@@ -1,6 +1,6 @@
 "use client"
 import { useState } from 'react'
-import { Send, CheckCircle, Github, Linkedin, Twitter } from 'lucide-react'
+import { Send, CheckCircle, Github, Linkedin } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Label } from '@radix-ui/react-label'
 import { Input } from '@/components/ui/input'
@@ -117,7 +117,7 @@ export function ContactForm() {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl mb-4">Get In Touch</h2>
             <p className="text-lg text-muted-foreground">
-              I'm always open to discussing new opportunities and interesting projects
+              I am always open to discussing new opportunities and interesting projects
             </p>
           </div>
 
@@ -127,7 +127,7 @@ export function ContactForm() {
               <Alert className="border-green-200 bg-green-50 dark:bg-green-950 dark:border-green-800">
                 <CheckCircle className="h-4 w-4 text-green-600 dark:text-green-400" />
                 <AlertDescription className="text-green-800 dark:text-green-200">
-                  Message sent successfully! I'll get back to you soon.
+                  Message sent successfully! I will get back to you soon.
                 </AlertDescription>
               </Alert>
             </div>
@@ -243,7 +243,7 @@ export function ContactForm() {
 
             <div className="flex items-center space-x-6">
               <a
-                href="https://github.com"
+                href="https://github.com/partiksingh1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
@@ -251,20 +251,12 @@ export function ContactForm() {
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/partik-singh-473805206"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >
                 <Linkedin className="w-5 h-5" />
-              </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-foreground transition-colors"
-              >
-                <Twitter className="w-5 h-5" />
               </a>
             </div>
           </div>

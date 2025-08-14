@@ -10,7 +10,7 @@ export function Contact() {
         <div className="text-center">
           <h2 className="mb-6">Get In Touch</h2>
           <p className="text-muted-foreground mb-8 max-w-md mx-auto">
-            I'm always open to discussing new opportunities and interesting projects.
+            I am always open to discussing new opportunities and interesting projects.
           </p>
 
           <div className="flex gap-4 justify-center mb-12">
@@ -24,12 +24,12 @@ export function Contact() {
 
           <div className="flex gap-4 justify-center">
             <Button variant="outline" size="icon" asChild>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/partiksingh1" target="_blank" rel="noopener noreferrer">
                 <Github className="w-4 h-4" />
               </a>
             </Button>
             <Button variant="outline" size="icon" asChild>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/partik-singh-473805206" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="w-4 h-4" />
               </a>
             </Button>

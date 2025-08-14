@@ -1,5 +1,5 @@
 "use client"
-import { ArrowLeft, ExternalLink, Github, CheckCircle, AlertCircle } from 'lucide-react'
+import { ArrowLeft, ExternalLink, Github, CheckCircle } from 'lucide-react'
 import type { ReactElement, JSXElementConstructor, ReactNode, ReactPortal, Key } from 'react'
 import { getProject } from '@/data/mockData'
 import { Button } from '@/components/ui/button'
@@ -24,7 +24,7 @@ export default function Page({ params }: { params: Promise<{ id: string }> }) {
                     <div className="max-w-4xl mx-auto text-center">
                         <h1 className="text-4xl mb-4">Project Not Found</h1>
                         <p className="text-muted-foreground mb-8">
-                            The project you're looking for doesn't exist.
+                            The project you are looking for doesnt exist.
                         </p>
                         <Button onClick={() => {
 
@@ -68,7 +68,7 @@ export default function Page({ params }: { params: Promise<{ id: string }> }) {
                             </div>
 
                             <div className="flex flex-wrap gap-2 mb-6">
-                                {project.technologies.map((tech: string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined> | null | undefined, index: Key | null | undefined) => (
+                                {project.technologies.map((tech: string | number | bigint | boolean | ReactElement<unknown, string> | Iterable<ReactNode> | ReactPortal | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string> | Iterable<ReactNode> | null | undefined> | null | undefined, index: Key | null | undefined) => (
                                     <Badge key={index} variant="secondary">
                                         {tech}
                                     </Badge>
@@ -133,7 +133,7 @@ export default function Page({ params }: { params: Promise<{ id: string }> }) {
                             </CardHeader>
                             <CardContent>
                                 <ul className="space-y-3">
-                                    {project.features.map((feature: string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined> | null | undefined, index: Key | null | undefined) => (
+                                    {project.features.map((feature, index) => (
                                         <li key={index} className="flex items-start gap-2">
                                             <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                                             <span>{feature}</span>
@@ -154,7 +154,7 @@ export default function Page({ params }: { params: Promise<{ id: string }> }) {
                                         <div className="flex flex-wrap gap-1">
                                             {project.technologies.filter((tech: string) =>
                                                 ['React', 'Vue.js', 'TypeScript', 'CSS Grid', 'Tailwind CSS'].includes(tech)
-                                            ).map((tech: string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined> | null | undefined, index: Key | null | undefined) => (
+                                            ).map((tech, index) => (
                                                 <Badge key={index} variant="outline" className="text-xs">
                                                     {tech}
                                                 </Badge>
@@ -166,7 +166,7 @@ export default function Page({ params }: { params: Promise<{ id: string }> }) {
                                         <div className="flex flex-wrap gap-1">
                                             {project.technologies.filter((tech: string) =>
                                                 ['Node.js', 'Firebase', 'PostgreSQL'].includes(tech)
-                                            ).map((tech: string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined> | null | undefined, index: Key | null | undefined) => (
+                                            ).map((tech, index) => (
                                                 <Badge key={index} variant="outline" className="text-xs">
                                                     {tech}
                                                 </Badge>
@@ -178,7 +178,7 @@ export default function Page({ params }: { params: Promise<{ id: string }> }) {
                                         <div className="flex flex-wrap gap-1">
                                             {project.technologies.filter((tech: string) =>
                                                 ['Chart.js', 'API Integration', 'Vuex', 'PWA', 'Geolocation API', 'Web Push API'].includes(tech)
-                                            ).map((tech: string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined> | null | undefined, index: Key | null | undefined) => (
+                                            ).map((tech, index) => (
                                                 <Badge key={index} variant="outline" className="text-xs">
                                                     {tech}
                                                 </Badge>
