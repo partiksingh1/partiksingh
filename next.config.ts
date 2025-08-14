@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    domains: ['github.com', 'images.unsplash.com'], // Add any other domains from which you want to load images
+  }
 };
 
 export default nextConfig;
