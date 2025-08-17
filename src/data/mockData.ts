@@ -25,7 +25,7 @@ export const projects: Project[] = [
       'https://github.com/user-attachments/assets/2e1dc2bb-b4e9-440b-a13c-6197146ee155',
       'https://github.com/user-attachments/assets/b8961e71-5d58-432c-8c5f-83249e6a594c',
     ],
-    technologies: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Tailwind CSS'],
+    technologies: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Tailwind CSS', 'Gemini AI'],
     liveUrl: 'https://blogzone-8chd.onrender.com/',
     githubUrl: 'https://github.com/partiksingh1/Blogs-Tracker',
     featured: true,
@@ -46,7 +46,7 @@ export const projects: Project[] = [
     images: [
       'https://github.com/user-attachments/assets/cd3aa440-3b23-43c5-96b9-45511816c469',
     ],
-    technologies: ['React', 'API Integration', 'Chart.js', 'CSS Grid', 'PWA', 'Geolocation API'],
+    technologies: ['React', 'WebSocket', 'Cron Jobs'],
     liveUrl: 'https://topictalk-vdbgrq.fly.dev/',
     githubUrl: 'https://github.com/partiksingh1/TopicTalk',
     featured: true,
@@ -70,7 +70,7 @@ export const projects: Project[] = [
       'https://github.com/user-attachments/assets/b3d92eb4-0173-4e1b-9747-77d42ab8d8eb',
       'https://github.com/user-attachments/assets/ee090774-0082-4cda-97d0-416148aca853'
     ],
-    technologies: ['Vue.js', 'Firebase', 'Vuex', 'Tailwind CSS', 'PWA', 'Web Push API'],
+    technologies: ['Java Springboot', 'React', 'PostgreSQL'],
     liveUrl: 'https://github.com/partiksingh1/smartbank',
     githubUrl: 'https://github.com/partiksingh1/smartbank',
     featured: true,
