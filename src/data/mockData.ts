@@ -17,6 +17,27 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: '1',
+    name: 'AskPDF',
+    description: 'AskPDF is a simple RAG app using LangChain that lets you upload PDFs and ask questions with help from Google Gemini AI.',
+    longDescription: 'A smart PDF question-answering application that lets you upload PDF documents and ask questions about their content using AI. Built with React, Express, and Google Gemini AI.',
+    image: 'https://github.com/user-attachments/assets/04952cd9-0d2d-4b07-9929-5e22bd55e6ec',
+    images: [
+      'https://github.com/user-attachments/assets/04952cd9-0d2d-4b07-9929-5e22bd55e6ec',
+    ],
+    technologies: ['React', 'TypeScript', 'LangChain', 'PostgreSQL', 'Redis', 'Google Gemini AI'],
+    liveUrl: 'https://askpdf-vlti.onrender.com/',
+    githubUrl: 'https://github.com/partiksingh1/AskPDF',
+    featured: true,
+    category: 'AI Agent',
+    features: [
+      'Upload PDF files and extract text content',
+      'Ask questions about your PDFs and get intelligent answers',
+      'Create up to 3 separate chat sessions for different documents',
+      'Find relevant content from your documents using embeddings',
+    ]
+  },
+  {
+    id: '2',
     name: 'BlogZone',
     description: 'A modern web app for tracking and managing blog posts with a clean, easy-to-use interface.',
     longDescription: 'Blogs Zone is a complete web application that helps users organize all their blog content in one place. It is built with modern technologies and offers a smooth experience across all devices. Users can create accounts, write and manage their blog posts, and enjoy features like AI-powered content summarization. The app has both light and dark themes and works great on phones, tablets, and computers.',
@@ -38,7 +59,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: '2',
+    id: '3',
     name: 'TopicTalk',
     description: 'Anonymous Topic Chat App',
     longDescription: 'An open, ephemeral, anonymous real-time chat application where users can create topic-based chat rooms',
@@ -60,7 +81,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: '3',
+    id: '4',
     name: 'SmartBank',
     description: 'Secure, full-featured digital banking platform developed with Java Spring Boot',
     longDescription: 'A secure, full-featured digital banking platform built with Spring Boot, providing REST APIs for user management, account operations, and transaction processing.',
